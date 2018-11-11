@@ -1,9 +1,11 @@
 * {
   border-radius:3px;
+  font-family:sans-serif;
+  text-decoration: none!important;
 }
 body {
   /* background-image: url(); */
-  background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5) ), url('https://images.pexels.com/photos/368260/pexels-photo-368260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6) ), url('https://images.pexels.com/photos/368260/pexels-photo-368260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   position: absolute;
   bottom:0;
   top:0;
@@ -187,7 +189,7 @@ body {
 .section {
   width:100%;
   background-color:#eee;
-  margin-top:10px;
+  margin-top:2em;
   min-height:4em;
 }
 .section:nth-child(2) {
