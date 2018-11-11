@@ -40,15 +40,19 @@ body {
   padding:20px;
   font-size: 35px;
 }
+.contact_icons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
 .content {
   width:70%;
   margin:auto;
-  padding-bottom: 35px;
 }
 .footer {
   background-color:grey;
   width:100%;
-  height:2em;
   position:fixed;
   bottom:0;
   left:0;
@@ -57,6 +61,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   z-index: 1;
+  display:none;
 }
 .footer_link a {
   color:#b73333!important;
@@ -70,16 +75,23 @@ body {
   text-align: center;
   padding: 3em;
 }
+.icon {
+  width: 35px;
+  display:block;
+  margin-top:5px;
+}
 .intro {
   width: 100%;
   text-align: center;
   padding: 20px;
+  height:50em;
 }
 .intro_text {
   width: 70%;
   margin: auto;
-  line-height: 20px;
+  line-height: 30px;
   padding: 20px 10px;
+  font-size:20px;
 }
 .intro_title {
   padding:10px;
@@ -192,6 +204,9 @@ body {
 
 /* BEGIN MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
+    .contact_icons {
+      display:none;
+    }
     .content {
       width:100%;
     }
@@ -202,6 +217,9 @@ body {
       float: none!important;
       width:100%!important;
       margin:10px auto!important;
+    }
+    .intro {
+      height:auto;
     }
     .item_row {
       padding: 0 10px;
@@ -232,4 +250,25 @@ body {
     .submit_button {
       right:calc(50% - 112.5px)!important;
     }
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 3em;
+  height: 3em;
+  transform: rotate(90deg);
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
