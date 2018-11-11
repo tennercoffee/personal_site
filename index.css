@@ -32,7 +32,7 @@ body {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     margin: auto;
-    width:40em;
+    width:50em;
 }
 .carousel_title {
   width:100%;
@@ -203,7 +203,11 @@ body {
 
 
 /* BEGIN MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width:40em;
+    }
     .contact_icons {
       display:none;
     }
