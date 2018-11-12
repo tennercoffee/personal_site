@@ -1,0 +1,30 @@
+.control {
+  background-color:grey;
+  border-radius:5px;
+  color:white;
+  text-align: center;
+  padding: 7em;
+  margin: 10px 20px;
+  font-size:20px;
+}
+.control:hover {
+  border: 3px solid white;
+  text-decoration:none;
+}
+.control:nth-child(2nd) {
+  float:right;
+}
+.control-panel {
+  display:flex;
+  height:100%;
+  margin-top:3em;
+}
+.page_title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.row {
+  width:100%;
+}
