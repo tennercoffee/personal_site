@@ -1,5 +1,7 @@
 <html>
   <head>
+    <title>Kevin Billeaud</title>
+    <link rel="icon" href="images/apache-logo.png" type="image" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="control.css" />
     <script src="index.js" charset="utf-8"></script>
@@ -109,27 +111,29 @@
         </div>
       </div>
       <div class="section" id="link_section">
-        <div class="row_50 left">
-          <a href="https://github.com/tennercoffee">
+        <div class="section_title">Projects</div>
+        <a href="https://github.com/tennercoffee">
+          <div class="row_50 left">
             <img class="row_50_image" src="images/logo.png" />
-          </a>
-        </div>
-        <div class="row_50 right row_50_text">
-          Check out my Github!
-        </div>
+          </div>
+          <div class="row_50 right row_50_text">
+            Check out my Github!
+            <p>My biggest personal project was codenamed 'Drop'. It was a geocaching application built for Android, implementing Google Maps API and a 3rd party API.</p>
+          </div>
+        </a>
       </div>
       <div class="section" id="lead_form">
         <div class="lead_form_container">
           <div class="form_text">
-            <p>I already appreciate your interest in my services. Please fill out this form below, and I'll be in touch within 24-48 hours. OR you can email me directly, with the link in the footer.</p>
+            <p>I already appreciate your interest in my services. Please fill out this form below, and I'll be in touch within 24-48 hours.</p>
           </div>
-          <form class="lead_form" onsubmit="">
-            <input placeholder="Full Name" required></input>
-            <input placeholder="Business Name"></input>
-            <input placeholder="Email Address" required></input>
-            <input placeholder="Phone Number"></input>
-            <input placeholder="Current Website (if applicable)"></input>
-            <input type="submit" value="Submit" id="submit_button" onclick="underConstruction()">
+          <form class="lead_form" onsubmit="alert('Thank you! I'll be in touch soon!')" action="mailto:kevinbilleaud@gmail.com" method="post" enctype="text/plain">
+            <input placeholder="Full Name" name="name" required></input>
+            <input placeholder="Business Name" name="busi_name"></input>
+            <input placeholder="Email Address"  name="email"required></input>
+            <input placeholder="Phone Number" name="phone"></input>
+            <input placeholder="Current Website (if applicable)" name="website"></input>
+            <input type="submit" value="Submit" id="submit_button">
           </form>
         </div>
       </div>
