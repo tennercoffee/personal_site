@@ -84,20 +84,14 @@ body {
 }
 .intro {
   width: 100%;
-  text-align: center;
   padding: 20px;
   height:50em;
 }
 .intro_text {
-  width: 70%;
-  margin: auto;
+  width: 95%;
   line-height: 30px;
-  padding: 20px 10px;
-  font-size:20px;
-}
-.intro_title {
-  padding:10px;
-  font-size: 35px;
+  padding: 1em;
+  font-size:25px;
 }
 .item {
   overflow-y: visible;
@@ -154,13 +148,21 @@ body {
   color:white;
   display:none;
 }
-.profile_photo {
-  width:50px;
+.profile {
   margin: auto;
   width: 100%;
+  text-align: right;
 }
-.profile_photo > img {
+.profile > img {
   border-radius: 50%;
+  float:left;
+  width:300px;
+  margin:1em;
+}
+.profile_title {
+  padding:1em;
+  font-size: 35px;
+  width:95%;
 }
 .row_50 {
   width:45%;
