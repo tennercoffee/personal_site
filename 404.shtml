@@ -797,7 +797,7 @@ body {
        <h1>Page not found (404 error)</h1>
    </div>
  </div> -->
- <div class="character"></div>
+ <div class="character"></div> <!-- borrowed from https://codepen.io/HugoGiraudel/pen/gpcwa -->
  <div class="row">
     <div class="col-md-12">
       <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
