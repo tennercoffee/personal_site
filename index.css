@@ -1,6 +1,6 @@
 * {
   border-radius:3px;
-  font-family:sans-serif;
+  font-family:monospace;
   text-decoration: none!important;
 }
 body {
@@ -19,22 +19,26 @@ body {
   background-color: black!important;
   width: 100%;
   color:white;
-  height:50em;
 }
 .carousel-caption {
   /* bottom: -50px!important; */
-  bottom: -225px!important;
+  padding-bottom: 50px;
+  position: relative!important;
+  width:100%;
+  text-align: center;
+  left:0!important;
+  right:0!important;
 }
 .carousel-control {
   height:87%;
 }
 .carousel-inner {
-  height:100%;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     margin: auto;
     width:50em;
+    max-height:350px;
 }
 .carousel_title {
   width:100%;
@@ -52,6 +56,30 @@ body {
   width:70%;
   margin:auto;
 }
+.timeline_container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: calc(50% - 5px);
+}
+.timeline_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #55ddff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container_left {
+  left: 0;
+}
+.container_right {
+  left:50%;
+}
 .footer {
   background-color:grey;
   width:100%;
@@ -64,6 +92,13 @@ body {
   line-height: 20px;
   z-index: 1;
   display:none;
+}
+.easter_egg_text {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  width:70%;
+  text-align: center;
 }
 .footer_link a {
   color:#b73333!important;
@@ -85,7 +120,6 @@ body {
 .intro {
   width: 100%;
   padding: 20px;
-  height:50em;
 }
 .intro_text {
   width: 95%;
@@ -98,7 +132,7 @@ body {
 }
 .item_row {
   width:100%;
-  padding: 0 6%;
+  padding: 0 5%;
 }
 .item_row_logo {
   width:50px;
@@ -127,9 +161,41 @@ body {
 .lead_form input:nth-child(even) {
   float:right;
 }
+.left {
+  float:left;
+}
+.link {
+  width:100%;
+  text-align:center;
+  font-size: 35px;
+}
+.container_left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
 #link_section {
   height: 20em;
   padding:15px;
+}
+.list_item_title {
+  text-align: center;
+  font-size: 15px;
+  padding:5%;
+  font-weight: bold;
+}
+.list_item_description {
+  word-break: break-word;
+  margin: 5%;
+  margin-top:0;
+  text-align:center;
 }
 .logo {
   float:right;
@@ -160,7 +226,7 @@ body {
   margin:1em;
 }
 .profile_title {
-  padding:1em;
+  padding:.75em;
   font-size: 35px;
   width:95%;
 }
@@ -179,11 +245,23 @@ body {
 .row_50_text {
   margin: 15px 20px;
 }
-.left {
-  float:left;
-}
 .right {
   float:right;
+}
+.container_right::after {
+  left: -13px;
+}
+.container_right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
 .scroll_button {
   position: absolute;
@@ -195,6 +273,7 @@ body {
   background-color:#eee;
   margin-top:2em;
   min-height:4em;
+  display:inline-block;
 }
 .section:nth-child(even) {
   background-color: white;
@@ -213,10 +292,35 @@ body {
   margin: 2em 20%;
   float:none!important;
 }
-
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:#dadada
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 10px;
+}
+.timeline_content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
 
 /* BEGIN MEDIA QUERIES */
 @media only screen and (max-width: 500px) {
+    .control-panel {
+      display:none!important;
+    }
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       width:40em;
@@ -227,6 +331,10 @@ body {
     .content {
       width:100%;
     }
+
+    .easter_egg_text {
+      display:none;
+    }
     .form_text {
       width:90%;
     }
@@ -236,13 +344,14 @@ body {
       margin:10px auto!important;
     }
     .intro {
-      height:auto;
     }
     .item_row {
       padding: 0 10px;
     }
+    .item_row_set {
+      margin-left: 7%;
+    }
     #link_section {
-      height:10em;
     }
     .logo {
       color:black;
@@ -253,6 +362,20 @@ body {
     p {
       font-size: 20px;
       line-height: 30px!important;
+      margin:auto;
+    }
+    .page_title {
+      max-width: 100%;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile > img {
+      width:75%;
+      float:none;
+    }
+    .profile_title {
+      display:none;
     }
     .row_50_image {
       width: 3.6em;
@@ -270,6 +393,40 @@ body {
     .submit_button {
       right:calc(50% - 112.5px)!important;
     }
+
+
+
+
+    /* WIP */
+    /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timeline_container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timeline_container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .container_left::after, .container_right::after {
+    left: 18px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .container_right {
+    left: 0%;
+  }
 }
 
 /* -----
@@ -291,4 +448,13 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1;
+}
+
+
+
+
+
+.canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
 }
