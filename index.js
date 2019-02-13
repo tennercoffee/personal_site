@@ -136,9 +136,9 @@ function clickCount(id) {
   if(count < 5) {
 
   } else {
-    if (id == '1') {
+    if (id === 1) {
       window.location = "egg1.html";
-    } else if (id == '2') {
+    } else if (id === 2) {
       window.location = "jcrabb13.html";
     }
   }
