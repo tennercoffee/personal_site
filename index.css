@@ -181,6 +181,12 @@ body {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
+.game {
+  width:100%;
+  padding-left: 14em;
+  width: 640px;
+  height: 400px;
+}
 #link_section {
   height: 20em;
   padding:15px;
@@ -337,6 +343,9 @@ body {
     }
     .form_text {
       width:90%;
+    }
+    .game {
+      padding-left: 0;
     }
     input {
       float: none!important;

@@ -130,12 +130,16 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
-function clickCount() {
+function clickCount(id) {
   count += 1;
   console.log(count);
   if(count < 5) {
 
   } else {
-    window.location = "egg1.html"
+    if (id == '1') {
+      window.location = "egg1.html";
+    } else if (id == '2') {
+      window.location = "jcrabb13.html";
+    }
   }
 }
