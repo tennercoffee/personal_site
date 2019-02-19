@@ -1,18 +1,24 @@
-<!--
-Personal website for
+<!---------------------------------------------------------------------------
+                           Personal website for
 |  /  _____                      ____               ____                 ____
 | /  |       \      / | |\   |   |   _ | |     |    |       /\    |    | |   \
 |/   |__      \    /  | | \  |   |___- | |     |    |___   /__\   |    | |   |
 | \  |         \  /   | |  \ |   |   - | |     |    |     /    \  |    | |   |
 |  \ |____      \/    | |   \|   |___- | |___  |___ |___ /      \ |____| |___/
--->
+--------------------------------------------------------------------------->
 <html>
   <head>
     <title>Kevin Billeaud</title>
+    <meta property="og:title" content="Kevin Billeaud - Technical Specialist">
+    <meta property="og:description" content="Personal Portfolio and Website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="http://kevinbilleaud.com/index.html">
+    <meta property="og:site_name" content="KevinBilleaud.com">
     <link rel="icon" href="images/apache-logo.png" type="image" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="control.css" />
-    <script src="index.js" charset="utf-8"></script>
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,7 +33,6 @@ Personal website for
           <line stroke="currentColor" x1="1" x2="24" y1="20" y2="20" stroke-width="2" stroke-linecap="round"></line>
         </svg>
       </div>
-      <div class="logo">KB</div>
     </div>
     <div class="content">
       <div class="page_title"><b>Kevin Billeaud</b></div>
@@ -91,7 +96,7 @@ Personal website for
             <div class="item">
               <img src="images/dropr.png" style="max-width:250px;"/>
               <div class="carousel-caption">
-                <h3>Moments AKA Dropr</h3>
+                <h3>Moments (AKA Dropr)</h3>
                 <p>Geocaching application built on the Android platform.</p>
               </div>
             </div>
@@ -146,7 +151,7 @@ Personal website for
       </div>
       <div class="section" id="history">
         <div class="section_title">History</div>
-        <div class="timeline">
+        <div class="timeline hideContent">
           <div class="timeline_container container_left">
             <div class="timeline_content">
               <div class="list_item_title">FareHarbor --  February 2019 - Current</div>
@@ -172,32 +177,36 @@ Personal website for
             </div>
           </div>
         </div>
+        <!-- <div class="show-more">
+          <a href="#">Show more</a>
+        </div> -->
+
       </div>
       <div class="section" id="link_section">
-        <div class="section_title">Projects</div>
-        <a href="https://github.com/coffeeAdd1ct">
-          <div class="row_50 left">
-            <img class="row_50_image" src="images/logo.png" />
-          </div>
-          <div class="row_50 right row_50_text">
-            Check out my Github!
-            <p>The biggest project is codenamed Drop. A geocaching application built for Android, implementing Google Maps API and a 3rd party API.</p>
-          </div>
-        </a>
+        <div class="section_title">Links</div>
+        <div>
+          <a href="https://github.com/coffeeAdd1ct">
+            <div class="row_50 left">
+              <img class="row_50_image" src="images/logo.png" />
+            </div>
+            <div class="row_50 right row_50_text">
+              Check out my Github!
+              <p>The biggest project is codenamed Drop. A geocaching application built for Android, implementing Google Maps API and a 3rd party API.</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <div class="row_50 row_100_link"><a href="hobby.html">A loose collection of hobbies.</a></div>
+        </div>
       </div>
       <div class="section" id="lead_form">
         <div class="lead_form_container">
           <div class="form_text">
             <p>If interested in services, please email <a href="mailto:billeaudk@gmail.com">BilleaudK@Gmail.com</a>.</p>
           </div>
-          <!--<form class="lead_form" action="mailto:kevinbilleaud@gmail.com" method="post" enctype="text/plain">
-            <input placeholder="Full Name" name="name" required></input>
-            <input placeholder="Business Name" name="busi_name"></input>
-            <input placeholder="Email Address"  name="email"required></input>
-            <input placeholder="Phone Number" name="phone"></input>
-            <input placeholder="Current Website (if applicable)" name="website"></input>
-            <input type="submit" value="Submit" id="submit_button">
-          </form>-->
+
+
+
         </div>
       </div>
       <div class="contact_icons">
