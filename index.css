@@ -112,6 +112,9 @@ body {
   text-align: center;
   padding: 3em;
 }
+#history {
+  background-color: #eee;
+}
 .icon {
   width: 35px;
   display:block;
@@ -148,6 +151,7 @@ body {
   padding-top: 10px;
 }
 #lead_form {
+  background-color: #eee;
 }
 .lead_form {
   width:100%;
@@ -286,7 +290,6 @@ hr {
 }
 .section {
   width:100%;
-  background-color:#eee;
   margin-top:2em;
   min-height:4em;
   display:inline-block;
@@ -518,7 +521,6 @@ hiding timeline
 .hideContent {
     overflow: hidden;
     line-height: 1em;
-    height: 72em;
 }
 
 .showContent {
