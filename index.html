@@ -17,6 +17,7 @@
     <link rel="icon" href="images/apache-logo.png" type="image" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="control.css" />
+    <link href="form.php" />
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/index.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -219,8 +220,17 @@
       <div class="section" id="lead_form">
         <div class="lead_form_container">
           <div class="form_text">
-            <p>If interested in services, please email <a href="mailto:billeaudk@gmail.com">BilleaudK@Gmail.com</a>.</p>
+            <p>If interested in services, please fill out the form below:</p>
           </div>
+          <form action="form.php" method="post">
+            <input id="name_input" placeholder="name" name="name"></input><br>
+            <input id="busi_name_input" placeholder="business name" name="busi_name"></input><br>
+            <input id="email_input" placeholder="email" name="email"></input><br>
+            <input id="phone_input" placeholder="phone" name="phone"></input><br>
+            <input id="website_input" placeholder="website" name="website"></input><br>
+            <input id="comment_input" placeholder="comments" name="comments"></input><br>
+            <button class="input" id="submit_button" type="submit"><b>SUBMIT</b></button>
+          </form>
         </div>
       </div>
       <div class="contact_icons">

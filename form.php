@@ -19,8 +19,8 @@
       if(!isset($_POST['name']) ||
           !isset($_POST['busi_name']) ||
           !isset($_POST['email']) ||
-          !isset($_POST['phone']) ||
-          !isset($_POST['website'])) {
+          !isset($_POST['website']) ||
+          !isset($_POST['comments'])) {
           died('We are sorry, but there appears to be a problem with the form you submitted.');
       }
 
@@ -31,6 +31,8 @@
       $email_from = $_POST['email']; // required
       $phone = $_POST['phone']; // not required
       $website = $_POST['website']; // required
+      $comments = $_POST['comments']; // required
+
 
       $error_message = "";
       $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -65,17 +67,20 @@
         return str_replace($bad,"",$string);
       }
 
-
-
       $email_message .= "Name: ".clean_string($name)."\n";
       $email_message .= "Business Name: ".clean_string($busi_name)."\n";
       $email_message .= "Email: ".clean_string($email_from)."\n";
-      $email_message .= "Telephone: ".clean_string($phone)."\n";
-      $email_message .= "Comments: ".clean_string($website)."\n";
+      $email_message .= "Website: ".clean_string($website)."\n";
+      $email_message .= "Comments: ".clean_string($comments)."\n";
 
   // create email headers
   $headers = 'From: '.$email_from."\r\n".
   'Reply-To: '.$email_from."\r\n" .
   'X-Mailer: PHP/' . phpversion();
   mail($email_to, $email_subject, $email_message, $headers);
+}
+
+  header('Location: http://wwww.kevinbilleaud.com/thanks.html');
+
+
 ?>

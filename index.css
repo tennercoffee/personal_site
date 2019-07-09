@@ -56,42 +56,11 @@ body {
   width:70%;
   margin:auto;
 }
-.timeline_container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: calc(50% - 5px);
-}
-.timeline_container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #55ddff;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
 .container_left {
   left: 0;
 }
 .container_right {
   left:50%;
-}
-.footer {
-  background-color:grey;
-  width:100%;
-  position:fixed;
-  bottom:0;
-  left:0;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  line-height: 20px;
-  z-index: 1;
-  display:none;
 }
 .easter_egg_text {
   position: absolute;
@@ -111,6 +80,25 @@ body {
   margin: auto;
   text-align: center;
   padding: 3em;
+}
+.footer {
+  background-color:grey;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  z-index: 1;
+  display:none;
+}
+form input {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin: 5px 20% 0px 20%;
 }
 #history {
   background-color: #eee;
@@ -333,6 +321,24 @@ hr {
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+.timeline_container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: calc(50% - 5px);
+}
+.timeline_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #55ddff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 .title_image {
   max-width:500px;
