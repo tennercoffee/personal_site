@@ -217,7 +217,7 @@ hr {
 .profile {
   margin: auto;
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 .profile > img {
   border-radius: 50%;
@@ -357,6 +357,10 @@ hr {
     blink-caret .5s step-end infinite;
   text-align: center;
 }
+
+#vortex_container {
+  padding:0 13%;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -457,6 +461,10 @@ hr {
     }
     .submit_button {
       right:calc(50% - 112.5px)!important;
+    }
+
+    #vortex {
+      display: none!important;
     }
 
       /* WIP */
