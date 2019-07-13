@@ -1,31 +1,11 @@
-<!--
-Personal website for
-|  /  _____                      ____               ____                 ____
-| /  |       \      / | |\   |   |   _ | |     |    |       /\    |    | |   \
-|/   |__      \    /  | | \  |   |___- | |     |    |___   /__\   |    | |   |
-| \  |         \  /   | |  \ |   |   - | |     |    |     /    \  |    | |   |
-|  \ |____      \/    | |   \|   |___- | |___  |___ |___ /      \ |____| |___/
--->
+<?php include './scripts/signature.php';?>
 <html>
 <head>
-  <link rel="stylesheet" href="index.css" />
-  <script src="index.js" charset="utf-8"></script>
-
-  <meta property="og:title" content="Kevin Billeaud - Technical Specialist">
-  <meta property="og:description" content="Personal Portfolio and Website">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="http://kevinbilleaud.com/index.html">
-  <meta property="og:site_name" content="KevinBilleaud.com">
+  <?php include './scripts/main.php';?>
 </head>
 <body>
   <div class="header">
-    <div class="menu">
-      <svg id="menu_button" viewBox="0 0 26 21" color="white" onclick="underConstruction()">
-        <line stroke="currentColor" x1="1" x2="24" y1="2" y2="2" stroke-width="2" stroke-linecap="round"></line>
-        <line stroke="currentColor" x1="1" x2="24" y1="11" y2="11" stroke-width="2" stroke-linecap="round"></line>
-        <line stroke="currentColor" x1="1" x2="24" y1="20" y2="20" stroke-width="2" stroke-linecap="round"></line>
-      </svg>
-    </div>
+    <?php include './scripts/menu.php';?>
     <div class="logo"><a href="index.html">KB</a></div>
   </div>
   <div class="content">

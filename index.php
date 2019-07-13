@@ -1,52 +1,15 @@
-<!---------------------------------------------------------------------------
-                           Personal website for
-|  /  _____                      ____               ____                 ____
-| /  |       \      / | |\   |   |   _ | |     |    |       /\    |    | |   \
-|/   |__      \    /  | | \  |   |___- | |     |    |___   /__\   |    | |   |
-| \  |         \  /   | |  \ |   |   - | |     |    |     /    \  |    | |   |
-|  \ |____      \/    | |   \|   |___- | |___  |___ |___ /      \ |____| |___/
---------------------------------------------------------------------------->
+<?php include './scripts/signature.php';?>
 <html>
   <head>
-    <title>Kevin Billeaud</title>
-    <meta property="og:title" content="Kevin Billeaud - Technical Specialist">
-    <meta property="og:description" content="Personal Portfolio and Website">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:url" content="http://kevinbilleaud.com/index.html">
-    <meta property="og:site_name" content="KevinBilleaud.com">
-    <link rel="icon" href="images/apache-logo.png" type="image" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="control.css" />
-    <link href="form.php" />
-    <script src="js/jquery.js" charset="utf-8"></script>
-    <script src="js/index.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137866721-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-137866721-1');
-    </script>
+    <?php include './scripts/main.php';?>
   </head>
   <body>
     <div class="header">
-      <div class="menu">
-        <svg id="menu_button" viewBox="0 0 26 21" onclick="underConstruction()">
-          <line stroke="currentColor" x1="1" x2="24" y1="2" y2="2" stroke-width="2" stroke-linecap="round"></line>
-          <line stroke="currentColor" x1="1" x2="24" y1="11" y2="11" stroke-width="2" stroke-linecap="round"></line>
-          <line stroke="currentColor" x1="1" x2="24" y1="20" y2="20" stroke-width="2" stroke-linecap="round"></line>
-        </svg>
-      </div>
+      <?php include './scripts/menu.php';?>
     </div>
     <div class="content">
       <div class="page_title"><b>Kevin Billeaud</b></div>
-      <div class="link"><a href="images/Resume.pdf" style="color:#55ddff;text-decoration:underline!important;">Resume</a></div>
+      <div class="link"><a href="images/Resume.pdf" target="_blank" style="color:#55ddff;text-decoration:underline!important;">Resume</a></div>
       <div class="control-panel">
         <div class="row">
           <a href="#myCarousel"><div class="control">Portfolio</div></a>
@@ -195,10 +158,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="show-more">
-          <a href="#">Show more</a>
-        </div> -->
-
       </div>
       <div class="section" id="link_section">
         <div class="section_title">Links</div>

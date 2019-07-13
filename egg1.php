@@ -1,21 +1,7 @@
-<!---------------------------------------------------------------------------
-                           Personal website for
-|  /  _____                      ____               ____                 ____
-| /  |       \      / | |\   |   |   _ | |     |    |       /\    |    | |   \
-|/   |__      \    /  | | \  |   |___- | |     |    |___   /__\   |    | |   |
-| \  |         \  /   | |  \ |   |   - | |     |    |     /    \  |    | |   |
-|  \ |____      \/    | |   \|   |___- | |___  |___ |___ /      \ |____| |___/
---------------------------------------------------------------------------->
+<?php include './scripts/signature.php';?>
 <html>
 <head>
-
-  <meta property="og:title" content="Kevin Billeaud - Technical Specialist">
-  <meta property="og:description" content="Personal Portfolio and Website">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="http://kevinbilleaud.com/index.html">
-  <meta property="og:site_name" content="KevinBilleaud.com">
-  <link rel="stylesheet" href="index.css" />
-  <script src="index.js" charset="utf-8"></script>
+  <?php include './scripts/main.php';?>
 </head>
   <body onload="startGame()">
     <div class="view-pane" id="main_view_pane">

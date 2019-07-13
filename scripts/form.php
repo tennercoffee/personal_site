@@ -14,7 +14,6 @@
           die();
       }
 
-
       // validation expected data exists
       if(!isset($_POST['name']) ||
           !isset($_POST['busi_name']) ||
@@ -24,15 +23,12 @@
           died('We are sorry, but there appears to be a problem with the form you submitted.');
       }
 
-
-
       $name = $_POST['name']; // required
       $busi_name = $_POST['busi_name']; // required
       $email_from = $_POST['email']; // required
       $phone = $_POST['phone']; // not required
       $website = $_POST['website']; // required
       $comments = $_POST['comments']; // required
-
 
       $error_message = "";
       $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -61,7 +57,6 @@
 
       $email_message = "Form details below.\n\n";
 
-
       function clean_string($string) {
         $bad = array("content-type","bcc:","to:","cc:","href");
         return str_replace($bad,"",$string);
@@ -81,6 +76,5 @@
 }
 
   header('Location: http://wwww.kevinbilleaud.com/thanks.html');
-
 
 ?>

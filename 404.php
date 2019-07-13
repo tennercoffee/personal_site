@@ -1,22 +1,7 @@
-<!---------------------------------------------------------------------------
-                           Personal website for
-|  /  _____                      ____               ____                 ____
-| /  |       \      / | |\   |   |   _ | |     |    |       /\    |    | |   \
-|/   |__      \    /  | | \  |   |___- | |     |    |___   /__\   |    | |   |
-| \  |         \  /   | |  \ |   |   - | |     |    |     /    \  |    | |   |
-|  \ |____      \/    | |   \|   |___- | |___  |___ |___ /      \ |____| |___/
---------------------------------------------------------------------------->
+<?php include './scripts/signature.php';?>
 <html>
 <head>
-
-<meta property="og:title" content="Kevin Billeaud - Technical Specialist">
-<meta property="og:description" content="Personal Portfolio and Website">
-<meta property="og:image" content="images/logo.png">
-<meta property="og:url" content="http://kevinbilleaud.com/index.html">
-<meta property="og:site_name" content="KevinBilleaud.com">
-<title>File Not Found</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php include './scripts/main.php';?>
 <style type="text/css">
 * {
   color:white;
@@ -819,7 +804,7 @@ body {
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead"><a href="index.html">Go back home.</a></p>
+      <p class="lead"><a href="index.php">Go back home.</a></p>
     </div>
   </div>
 </div>
