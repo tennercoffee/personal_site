@@ -172,6 +172,18 @@
             </div>
           </a>
         </div>
+
+        <div>
+          <a href="https://theteacherdownthehall.com">
+          <div class="row_50 left">
+            <img class="row_50_image" src="images/logo0.png" />
+          </div>
+            <div class="row_50 right row_50_text">
+              A custom website built for a client
+            </div>
+          </a>
+        </div>
+
         <div>
           <div class="row_50 row_100_link"><a href="hobby.html">A loose collection of hobbies.</a></div>
         </div>
