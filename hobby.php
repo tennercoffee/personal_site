@@ -6,7 +6,7 @@
 <body>
   <div class="header">
     <?php include './scripts/menu.php';?>
-    <div class="logo"><a href="index.html">KB</a></div>
+    <div class="logo"><a href="index.php">KB</a></div>
   </div>
   <div class="content">
     <div class="section" style="background-color:white">

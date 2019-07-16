@@ -231,9 +231,10 @@ hr {
   width:95%;
 }
 .row_50 {
-  width:45%;
+  width:40%;
   font-size: 25px;
   margin-bottom: 25px;
+  margin-left: 10%;
 }
 .row_50 > p {
   font-size: 14px;
@@ -242,6 +243,7 @@ hr {
   width:5em;
   margin:auto;
   margin-left: 35%;
+  margin-top:5px;
 }
 .row_50_text {
   margin: 15px 20px;

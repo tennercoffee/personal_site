@@ -137,9 +137,9 @@ function clickCount(id) {
 
   } else {
     if (id === 1) {
-      window.location = "egg1.html";
+      window.location = "egg1.php";
     } else if (id === 2) {
-      window.location = "jcrabb13.html";
+      window.location = "jcrabb13.php";
     }
   }
 }
