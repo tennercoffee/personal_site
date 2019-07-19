@@ -30,7 +30,7 @@
             <p class="intro_text">29 years old</p>
             <!-- <p class="intro_text">Sales Engineer - SaaS</p> -->
             <p class="intro_text">Project focused individual with love for taking something from concept to production</p>
-            <p class="intro_text">Work ethic and communication skills learned in the service industry, plus sofware development abilities, combine to make a highly affective team member</p>
+            <p class="intro_text">Work ethic and communication skills learned in the service industry, plus sofware development abilities, combine to make a highly effective team member</p>
           </div>
         </div>
         <div>
