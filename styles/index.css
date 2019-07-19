@@ -99,6 +99,8 @@ form input {
   margin-left: 20%;
   margin-right: 20%;
   margin: 5px 20% 0px 20%;
+  padding: 10px;
+  border-radius: 5px;
 }
 #history {
   background-color: #eee;
