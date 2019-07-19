@@ -161,7 +161,7 @@
       </div>
       <div class="section" id="link_section">
         <div class="section_title">Links</div>
-        <div style="text-align: center;">
+        <div style="text-align: center;margin-right:60px;">
           <a href="https://github.com/coffeeAdd1ct">
             <div class="row_50 left">
               <img class="row_50_image" src="images/logo.png" />
@@ -172,15 +172,14 @@
             </div>
           </a>
         </div>
-        <div style="text-align: center;">
+        <div style="text-align: center;margin-right:60px;">
           <a href="https://theteacherdownthehall.com">
-          <div class="row_50">
-            <img class="row_50_image" src="images/logo0.png" />
-          </div>
-          <div class="row_50 right row_50_text">
-            A custom website built for a client
-            <p>The biggest project is codenamed Drop. A geocaching application built for Android, implementing Google Maps API and a 3rd party API.</p>
-          </div>
+            <div class="row_50 left">
+              <img class="row_50_image" src="images/logo0.png" />
+            </div>
+            <div class="row_50 right row_50_text">
+              A custom website built for a client
+            </div>
           </a>
         </div>
         <div>
